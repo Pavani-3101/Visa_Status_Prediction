@@ -4,9 +4,33 @@
 
 ## 📝 Description
 
-Visa_Status_Prediction is a sophisticated machine learning solution designed to forecast the outcome of visa applications by analyzing historical datasets. This project leverages predictive modeling to identify key factors influencing visa approvals, such as applicant demographics, professional background, and employer information. By implementing a comprehensive data science pipeline—encompassing rigorous data cleaning, exploratory data analysis (EDA), and the deployment of classification algorithms like Random Forest or Gradient Boosting—the tool provides valuable insights for applicants and immigration professionals alike. The goal is to improve decision-making transparency and streamline the evaluation process through accurate, data-driven predictions.
+Visa Status Processing Time Prediction is a machine learning project that analyzes historical visa application records to predict the number of days required to process a visa application.
 
-## 📁 Project Structure
+Instead of predicting approval or rejection, this project focuses on estimating processing_days, helping to identify patterns and delays across visa types, applicant countries, employer regions, and seasonal trends.
+
+The project follows a structured data science pipeline including:
+
+- Data cleaning and preprocessing
+
+- Exploratory Data Analysis (EDA)
+
+- Feature engineering
+
+- Preparation for predictive modeling
+
+## Project Objective
+
+To build a data-driven model that can:
+
+- Analyze historical visa processing trends
+
+- Identify key factors influencing processing delays
+
+- Engineer meaningful features
+
+- Prepare the dataset for regression modeling
+
+## Project Structure
 
 ```
 .
@@ -23,11 +47,51 @@ Visa_Status_Prediction is a sophisticated machine learning solution designed to 
   - Job details (title, experience, salary)
   - Other flags and indicators for visa processing
 
-## Features
-- Cleaned and preprocessed dataset
-- Numeric and categorical columns normalized
-- Y/N flags converted to numeric
-- Missing values handled
+## Target Variable
+
+processing_days — Number of days taken to process a visa application.
+
+## Data Preprocessing
+- Dataset inspection
+- Missing value handling
+- Data cleaning
+- Target variable validation
+- Ready-for-model dataset
+
+## Exploratory Data Analysis
+The following analyses were performed:
+
+- Distribution of processing time
+
+- Visa type-wise processing comparison
+
+- Country-level processing trends
+
+- Seasonal pattern analysis (month & season extraction)
+
+- Employer state-level variation
+
+- Correlation analysis for numeric features
+
+
+## Feature Engineering
+- Extracted month from case received date
+- Created seasonal categories
+- Generated country-level average processing feature
+- Prepared numeric features for modeling
+
+## Technologies Used
+- Python
+
+- Pandas
+
+- NumPy
+
+- Matplotlib
+
+- Seaborn
+
+- Jupyter Notebook
 
 ## How to Use
 1. Clone this repository:
@@ -38,7 +102,7 @@ Visa_Status_Prediction is a sophisticated machine learning solution designed to 
    import pandas as pd
    
    df = pd.read_csv("visa_dataset.csv")
-4. Begin your analysis or build machine learning models.
+
 
 ## License
 This project is licensed under the MIT License - see MIT_license.txt for details.
