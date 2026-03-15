@@ -33,10 +33,12 @@ To build a data-driven model that can:
 ## Project Structure
 
 ```
-.
-├── MIT license.txt
-├── Visa_Status_Prediction.ipynb
-└── visa_dataset.csv
+├── visa_dataset.csv
+├── Milestone_1.ipynb
+├── Milestone_2.ipynb
+├── Milestone_3.ipynb
+├── README.md
+└── MIT_license.txt
 ```
 ## Dataset
 - Cleaned dataset (`visa_dataset.csv`) is included in this repository.
@@ -80,17 +82,52 @@ The following analyses were performed:
 - Generated country-level average processing feature
 - Prepared numeric features for modeling
 
-## Technologies Used
+# Machine Learning Models (Milestone 3)
+
+The project implements regression models to predict visa processing time.
+
+### Model Used
+
+**Random Forest Regressor**
+
+Random Forest is an ensemble learning algorithm that builds multiple decision trees and combines their predictions to improve accuracy and reduce overfitting.
+
+---
+
+# Hyperparameter Tuning
+
+To improve model performance, **GridSearchCV** was used to tune key parameters such as:
+
+- Number of trees (`n_estimators`)
+- Maximum tree depth (`max_depth`)
+- Minimum samples split
+- Minimum samples per leaf
+
+Hyperparameter tuning helps identify the best combination of parameters for optimal prediction performance.
+
+---
+
+# Model Evaluation
+
+Model performance was evaluated using regression metrics such as:
+
+- **Mean Absolute Error (MAE)**
+- **Mean Squared Error (MSE)**
+- **Root Mean Squared Error (RMSE)**
+- **R² Score**
+
+These metrics help measure how accurately the model predicts visa processing time.
+
+---
+
+# Technologies Used
+
 - Python
-
 - Pandas
-
 - NumPy
-
 - Matplotlib
-
 - Seaborn
-
+- Scikit-learn
 - Jupyter Notebook
 
 ## How to Use
