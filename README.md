@@ -4,7 +4,7 @@
 
 ## 📝 Description
 
-Visa Status Processing Time Prediction is a machine learning project that analyzes historical visa application records to predict the number of days required to process a visa application.
+This project is a machine learning application that analyzes historical visa application records to predict the number of days required to process a visa application.
 
 Instead of predicting approval or rejection, this project focuses on estimating processing_days, helping to identify patterns and delays across visa types, applicant countries, employer regions, and seasonal trends.
 
@@ -20,16 +20,15 @@ The project follows a structured data science pipeline including:
 
 ## Project Objective
 
-To build a data-driven model that can:
+The main goals of this project are to:
 
 - Analyze historical visa processing trends
-
 - Identify key factors influencing processing delays
-
 - Engineer meaningful features
-
 - Prepare the dataset for regression modeling
-
+- Build a predictive model for visa processing time
+- Deploy a live interactive application for user-friendly predictions
+  
 ## Project Structure
 
 ```
@@ -37,8 +36,14 @@ To build a data-driven model that can:
 ├── Milestone_1.ipynb
 ├── Milestone_2.ipynb
 ├── Milestone_3.ipynb
+├── Milestone_4/
+│    ├── app.py
+│    ├── model.pkl
+│    └── requirements.txt
+├── Agile_documentation_Final.xls      # Agile process documentation
 ├── README.md
 └── MIT_license.txt
+
 ```
 ## Dataset
 - Cleaned dataset (`visa_dataset.csv`) is included in this repository.
@@ -120,6 +125,19 @@ These metrics help measure how accurately the model predicts visa processing tim
 
 ---
 
+# Milestone 4 – Web Application Deployment
+
+A live interactive application has been deployed using Streamlit. Users can input visa-related parameters and get real-time predictions of processing time.
+
+Files included in Milestone 4:
+
+app.py – Streamlit application code
+model.pkl – Trained Random Forest model
+requirements.txt – Python dependencies
+
+Access the live app here:
+https://visastatuspredictiongit-gho2phs5lqe7d4qyjxda7x.streamlit.app/
+
 # Technologies Used
 
 - Python
@@ -129,6 +147,7 @@ These metrics help measure how accurately the model predicts visa processing tim
 - Seaborn
 - Scikit-learn
 - Jupyter Notebook
+- Streamlit (for deployment)
 
 ## How to Use
 1. Clone this repository:
@@ -139,6 +158,12 @@ These metrics help measure how accurately the model predicts visa processing tim
    import pandas as pd
    
    df = pd.read_csv("visa_dataset.csv")
+3. Install requirements:
+   ```bash
+   pip install -r Milestone_4/requirements.txt
+4. Run the Streamlit app:
+   ```bash
+   streamlit run Milestone_4/app.py
 
 
 ## License
