@@ -40,7 +40,9 @@ The main goals of this project are to:
 │    ├── app.py
 │    ├── model.pkl
 │    └── requirements.txt
-├── Agile_documentation_Final.xls      # Agile process documentation
+├── Pavani_Agile_documentation_Final.xls      # Agile process documentation
+├── Pavani_Defect_Tracker.xls
+├── Pavani_Unit_Testing.xls
 ├── README.md
 └── MIT_license.txt
 
